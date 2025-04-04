@@ -1,0 +1,206 @@
+/* === Глобальні стилі === */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #f5f5f5, #e3d7ff);
+    color: #333;
+}
+
+/* === Контейнер резюме === */
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* === Ліва колонка (Персональна інформація) === */
+.left-column {
+    background: linear-gradient(135deg, #5a3d5c, #8b607d);
+    color: white;
+    padding: 30px;
+    width: 35%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Фото профілю */
+.profile-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-photo:hover {
+    transform: scale(1.1);
+}
+
+/* Заголовки в лівій колонці */
+.left-column h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.left-column .job-title {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: 0.8;
+}
+
+/* Блоки інформації */
+.section {
+    width: 100%;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.section h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.left-column ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.left-column ul li {
+    background: rgba(255, 255, 255, 0.1);
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* === Права колонка (Детальна інформація) === */
+.right-column {
+    background: white;
+    padding: 40px;
+    width: 65%;
+}
+
+/* Заголовки */
+h1 {
+    font-size: 28px;
+    color: #5a3d5c;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    color: #8b607d;
+    margin-top: 20px;
+    font-size: 20px;
+    border-bottom: 2px solid #8b607d;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/* === Блоки інформації === */
+.job, .education {
+    margin-top: 20px;
+    padding: 15px;
+    border-left: 4px solid #8b607d;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.job h3, .education h3 {
+    font-size: 18px;
+    color: #5a3d5c;
+    margin-bottom: 5px;
+}
+
+.job p, .education p {
+    font-size: 14px;
+}
+
+/* === Навички === */
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.skills span {
+    background: #8b607d;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* === Посилання === */
+a {
+    color: #8b607d;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #5a3d5c;
+    text-decoration: underline;
+}
+
+/* === Адаптивність === */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    
+    .left-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+}
+
+/* Стилі для горизонтального меню */
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
