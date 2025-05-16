@@ -1,0 +1,21 @@
+table {
+    border: 2px solid rgb(12, 12, 12);
+    background-color: silver;
+    padding: 5px;
+    font-size: 50px;
+    border-collapse: collapse;
+}
+
+td {
+    background-color: rgb(89, 188, 233);
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Шаховий малюнок */
+tr:nth-child(even) td:nth-child(even),
+tr:nth-child(odd) td:nth-child(odd) {
+    background-color: rgb(117, 90, 224);
+}
