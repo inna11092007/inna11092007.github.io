@@ -84,33 +84,44 @@ body {
   
   /* === Services === */
   .services {
-    background: #fff;
-    padding: 60px 0;
-    text-align: center;
-  }
-  
-  .services h2 {
-    font-weight: 400;
-  }
-  
-  .service-items {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 40px;
-    gap: 20px;
-  }
-  
-  .service img {
-    width: 50px;
-    margin-bottom: 20px;
-  }
-  
-  .service p {
-    max-width: 250px;
-    margin: 0 auto;
-    font-size: 14px;
-    color: #888;
-  }
+  background: #fff;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 50px;
+  color: #222;
+}
+
+.service-items {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.service {
+  max-width: 280px;
+}
+
+.service img {
+  width: 50px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+
+.service p {
+  color: #bbb;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
   
   /* === Blog === */
   .blog {
