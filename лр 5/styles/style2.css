@@ -15,7 +15,7 @@ table {
 }
 
 th {
-    background-color: rgb(14, 163, 14);
+    background-color: rgb(49, 148, 49);
     color: white;
     width: 500px;
     border: 2px solid black;
@@ -24,26 +24,34 @@ th {
 
 td {
     border: 2px solid black;
-    background-color: rgb(193, 233, 168);
+    background-color: rgb(202, 255, 167);
     padding-right: 20px;
 }
 
 td:nth-child(even) {
-    background-color: rgb(168, 239, 120);
+    background-color: rgb(163, 247, 106);
+}
+
+.container {
+    text-align: center;
 }
 
 .table {
-    width: 800px;
-    height: 145px;
-    margin: 10px auto;
-    overflow: hidden; /* додано! */
+    display: inline-block;
+    min-width: 500px;
+    max-height: 145px;
+    text-align: left;
 }
 
-
+.table:after {
+    display: table;
+    content: "";
+    clear: both;
+}
 
 .hrow {
     text-align: center;
-    background-color: rgb(14, 163, 14);
+    background-color: rgb(49, 148, 49);
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -51,7 +59,7 @@ td:nth-child(even) {
 }
 
 .col {
-    background-color: rgb(193, 233, 168);
+    background-color: rgb(202, 255, 167);
     float: left;
 }
 
@@ -62,10 +70,9 @@ td:nth-child(even) {
 }
 
 .col:nth-child(odd) {
-    background-color: rgb(168, 239, 120);
+    background-color: rgb(163, 247, 106);
 }
 
 .col:last-child div {
     border-right: 2px solid black;
-    width: 153.8px;
 }

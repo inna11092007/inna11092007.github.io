@@ -27,20 +27,20 @@ tr td:nth-child(n+2) {
 }
 
 thead tr {
-    background-color: rgb(45, 150, 173);
+    background-color: rgb(21, 82, 224);
     color: white;
 }
 
 tr td:first-child {
     text-align: left;
-    background-color: rgb(45, 150, 173);
+    background-color: rgb(21, 82, 224);
     color: white;
     font-weight: bold;
     padding-left: 20px;
 }
 
 tbody td:not(td:first-child) {
-    background-color: rgba(144, 227, 236, 0.892);
+    background-color: rgba(94, 149, 233, 0.892);
     text-align: center;
     line-height: 24px;
 }
@@ -59,14 +59,14 @@ tbody td:not(td:first-child) {
 }
 
 .row:first-child div:nth-child(n+2) {
-    background-color: rgb(45, 150, 173);
+    background-color: rgb(21, 82, 224);
     color: white;
     font-weight: bold;
     text-align: center;
 }
 
 .row div:first-child {
-    background-color: rgb(45, 150, 173);
+    background-color: rgb(21, 82, 224);
     color: white;
     padding-left: 20px;
     font-weight: bold;
@@ -78,6 +78,6 @@ tbody td:not(td:first-child) {
 }
 
 .row:nth-child(n+2) div:nth-child(n+2) {
-    background-color: rgba(144, 227, 236, 0.892);
+    background-color: rgba(94, 149, 233, 0.892);
     text-align: center;
 }
